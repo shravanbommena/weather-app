@@ -1,0 +1,43 @@
+.weather-card {
+  background-color: #cce2f9;
+  color: rgb(87, 98, 105);
+  border-radius: 10px;
+
+  width: 90%;
+  min-width: 300px;
+  max-width: 350px;
+  position: relative;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.weather-card:hover .pin-button {
+  display: inline-block;
+}
+
+.weather-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather-temp {
+  margin-top: 0;
+  font-size: 24px;
+}
+
+.pin-button {
+  z-index: 1;
+  position: absolute;
+  top: 15px;
+  right: 14px;
+  display: none;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
